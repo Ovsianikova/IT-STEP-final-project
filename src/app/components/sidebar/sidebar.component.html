@@ -1,0 +1,35 @@
+@if(currentUser$ | async; as user){
+    <div class="overlay sidebar">
+
+        <nav>
+            <ul class="f-row links">
+                <li><a [routerLink]="['/']">Home</a></li>
+                <li><a [routerLink]="['/users']">Dashboard</a></li>
+                <li><a [routerLink]="['/about']">About</a></li>
+                <li><a [routerLink]="['/contact']">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <hr>
+        
+        <div class="toggle-view f-row b">
+            <h4>View Mode</h4>
+            <mat-button-toggle-group #group="matButtonToggleGroup" (change)="toggleTableView(group.value)">
+                <mat-button-toggle matTooltip="Table view" matTooltipShowDelay="800" [value]="true" aria-label="Table view">
+                    <mat-icon>view_list</mat-icon>
+                </mat-button-toggle>
+                <mat-button-toggle matTooltip="Cards view" matTooltipShowDelay="800" [value]="false" aria-label="Card view">
+                    <mat-icon>view_module</mat-icon>
+                </mat-button-toggle>
+            </mat-button-toggle-group>
+        </div>
+    
+        <hr>
+    
+        <h3 class="form__header">Add user</h3>
+        <app-form state="edit" [form]="userForm" [currentUserRole]="user.role"></app-form>
+        <app-btn color="primary" (click)="submit()">Add</app-btn>
+        <app-btn color="warn" (click)="logout()" class="logout">Log out</app-btn>
+        <hr>
+    </div>
+}

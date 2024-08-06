@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Likaa",
+      "email": "l_ovsianikova@cu.edu.ge",
+      "password": "1234",
+      "role": "admin"
+    },
+    {
+      "id": "c8ec",
+      "name": "add",
+      "email": "add@gmail.com",
+      "password": "123123123",
+      "role": "user"
+    },
+    {
+      "id": "b0eb",
+      "name": "fixed",
+      "email": "fixed@gmail.com",
+      "password": "123123123",
+      "role": "admin"
+    }
+  ]
+}

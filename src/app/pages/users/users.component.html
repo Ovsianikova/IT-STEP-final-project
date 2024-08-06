@@ -1,0 +1,12 @@
+<div class="grid-wrapper list-wrapper">
+    @if(getTableView$ | async){
+    <app-table [users$]="users$"></app-table>
+    }
+    @else {
+    <div class="f-row c">
+        @for(user of users$ | async; track user.id){
+        <app-card [user]="user"></app-card>
+        }
+    </div>
+    }
+</div>

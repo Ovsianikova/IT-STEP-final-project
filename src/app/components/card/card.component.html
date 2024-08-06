@@ -1,0 +1,21 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>
+            <a [routerLink]="['/', 'view', user.id]"> #{{user.id}} {{user.name}}</a>
+            <app-icon fab name="edit" class="card-edit-btn" [routerLink]="['/','create', user.id]"></app-icon>
+        </mat-card-title>
+
+        <mat-card-subtitle>
+            email: {{user.email}} <br>
+            role: {{user.role}}
+        </mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-actions>
+        @if(btnShow){
+        <app-btn color="primary" [routerLink]="['/users']">Dashboard</app-btn>
+        }
+        @else {
+        <app-btn [routerLink]="['/', 'view', user.id]">Detailed</app-btn>
+        }
+    </mat-card-actions>
+</mat-card>

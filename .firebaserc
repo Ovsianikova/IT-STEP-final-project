@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "default": "lika-step",
+    "ls": "lika-step"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}

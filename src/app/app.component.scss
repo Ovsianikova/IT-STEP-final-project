@@ -1,0 +1,30 @@
+.fixed-nav{
+    // position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 30px;
+    border-bottom: 2px solid black;
+    // border-bottom: 1px solid;
+    // border-image-source: linear-gradient(to right, transparent 5%, black, transparent 95%);
+    // border-image-slice: 1;
+
+    .app-name{
+        color: #000;
+    }
+
+    nav{
+        padding: 15px;
+        border-right: 2px solid black;
+        margin-right: 15px;
+
+        
+    }
+    
+    a{
+        color: #000;
+    }
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}

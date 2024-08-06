@@ -1,0 +1,11 @@
+:host {
+    height: 48px;
+    display: grid;
+    place-items: center;
+}
+
+mat-icon {
+    transform-origin: center center;
+    cursor: pointer;
+    display: grid;
+}
